@@ -156,20 +156,34 @@
                         startBot();
                     }
                     if (countBalls.gamer <= 0) {
-                        alert(`Вы проиграли! Сыграем еще раз?`);
-                        result.player = 0;
-                        result.computer = 0;
-                        countBalls.gamer = 5;
-                        countBalls.bot = 5;
-                        startGame();
+                        const exitGame =
+                        confirm(`Вы проиграли! Сыграем еще раз?`);
+                        if (exitGame === true) {
+                            result.player = 0;
+                            result.computer = 0;
+                            countBalls.gamer = 5;
+                            countBalls.bot = 5;
+                            startGame();
+                        } else {
+                            result.player = false;
+                            result.computer = false;
+                            return;
+                        }
                     }
                     if (countBalls.bot <= 0) {
-                        alert(`Вы выиграли! Сыграем еще раз?`);
-                        result.player = 0;
-                        result.computer = 0;
-                        countBalls.gamer = 5;
-                        countBalls.bot = 5;
-                        startGame();
+                        const exitGame =
+                        confirm(`Вы выиграли! Сыграем еще раз?`);
+                        if (exitGame === true) {
+                            result.player = 0;
+                            result.computer = 0;
+                            countBalls.gamer = 5;
+                            countBalls.bot = 5;
+                            startGame();
+                        } else {
+                            result.player = false;
+                            result.computer = false;
+                            return;
+                        }
                     }
                 } else {
                     startBot();
@@ -181,20 +195,34 @@
                         startUser();
                     }
                     if (countBalls.gamer <= 0) {
-                        alert(`Вы проиграли! Сыграем еще раз?`);
-                        result.player = 0;
-                        result.computer = 0;
-                        countBalls.gamer = 5;
-                        countBalls.bot = 5;
-                        startGame();
+                        const exitGame =
+                        confirm(`Вы проиграли! Сыграем еще раз?`);
+                        if (exitGame === true) {
+                            result.player = 0;
+                            result.computer = 0;
+                            countBalls.gamer = 5;
+                            countBalls.bot = 5;
+                            startGame();
+                        } else {
+                            result.player = false;
+                            result.computer = false;
+                            return;
+                        }
                     }
                     if (countBalls.bot <= 0) {
-                        alert(`Вы выиграли! Сыграем еще раз?`);
-                        result.player = 0;
-                        result.computer = 0;
-                        countBalls.gamer = 5;
-                        countBalls.bot = 5;
-                        startGame();
+                        const exitGame =
+                        confirm(`Вы выиграли! Сыграем еще раз?`);
+                        if (exitGame === true) {
+                            result.player = 0;
+                            result.computer = 0;
+                            countBalls.gamer = 5;
+                            countBalls.bot = 5;
+                            startGame();
+                        } else {
+                            result.player = false;
+                            result.computer = false;
+                            return;
+                        }
                     }
                 }
                 startMarbles();
